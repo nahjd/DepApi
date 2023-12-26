@@ -7,13 +7,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 const bodyParser = require("body-parser");
 const userRouter = require("./src/routers/router");
-// const productRouter = require("./src/routers/productRouter");
 
 app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/", userRouter);
-// app.use("/products", productRouter);
 
 app.get("/", (req, res) => {
   res.send("Users");
