@@ -5,6 +5,7 @@ const userSchema = mongoose.Schema(
     username: String,
     surname: String,
     email: String,
+    userName: String,
     password: String,
     isPublic: Boolean,
     posts: Array,
